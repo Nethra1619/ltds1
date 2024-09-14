@@ -1,0 +1,27 @@
+<div class="example-container">
+    <h3>Example: Set Operations</h3>
+    <button onclick="runExample('set')">Show Example</button>
+    <div id="set-example" class="hidden"></div>
+    <script>
+        function runExample(type) {
+            const exampleDiv = document.getElementById(`${type}-example`);
+            exampleDiv.innerHTML = `
+                <pre>
+# Example Python Code
+my_set = {1, 2, 3}
+print("Original Set:", my_set)
+
+# Add an item
+my_set.add(4)
+print("After adding item:", my_set)
+
+# Remove an item
+my_set.remove(2)
+print("After removing item:", my_set)
+                </pre>
+            `;
+            exampleDiv.classList.remove('hidden');
+            exampleDiv.classList.add('visible');
+        }
+    </script>
+</div>
