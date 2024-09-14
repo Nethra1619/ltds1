@@ -18,10 +18,10 @@ This project demonstrates methods and operations for Python data structures: lis
 
 ## Live Demo
 
-You can view the live demo of this project on [GitHub Pages](https://nethra1619.github.io/ltds1/).
+You can view the live demo of this project on [GitHub Pages](https://Nethra1619.github.io/ltds1/).
 
 ## How to Run Locally
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/nethra1619/ltds1.git
+   git clone https://github.com/Nethra1619/ltds1.git
