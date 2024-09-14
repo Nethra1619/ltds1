@@ -1,0 +1,22 @@
+<div class="example-container">
+    <h3>Example: Tuple Operations</h3>
+    <button onclick="runExample('tuple')">Show Example</button>
+    <div id="tuple-example" class="hidden"></div>
+    <script>
+        function runExample(type) {
+            const exampleDiv = document.getElementById(`${type}-example`);
+            exampleDiv.innerHTML = `
+                <pre>
+# Example Python Code
+my_tuple = (1, 2, 3)
+print("Original Tuple:", my_tuple)
+
+# Access an item
+print("Item at index 1:", my_tuple[1])
+                </pre>
+            `;
+            exampleDiv.classList.remove('hidden');
+            exampleDiv.classList.add('visible');
+        }
+    </script>
+</div>
