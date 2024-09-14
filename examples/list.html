@@ -1,0 +1,27 @@
+<div class="example-container">
+    <h3>Example: List Operations</h3>
+    <button onclick="runExample('list')">Show Example</button>
+    <div id="list-example" class="hidden"></div>
+    <script>
+        function runExample(type) {
+            const exampleDiv = document.getElementById(`${type}-example`);
+            exampleDiv.innerHTML = `
+                <pre>
+# Example Python Code
+my_list = [1, 2, 3]
+print("Original List:", my_list)
+
+# Append an item
+my_list.append(4)
+print("After append:", my_list)
+
+# Remove an item
+my_list.remove(2)
+print("After remove:", my_list)
+                </pre>
+            `;
+            exampleDiv.classList.remove('hidden');
+            exampleDiv.classList.add('visible');
+        }
+    </script>
+</div>
