@@ -1,0 +1,27 @@
+<div class="example-container">
+    <h3>Example: Dictionary Operations</h3>
+    <button onclick="runExample('dictionary')">Show Example</button>
+    <div id="dictionary-example" class="hidden"></div>
+    <script>
+        function runExample(type) {
+            const exampleDiv = document.getElementById(`${type}-example`);
+            exampleDiv.innerHTML = `
+                <pre>
+# Example Python Code
+my_dict = {'a': 1, 'b': 2}
+print("Original Dictionary:", my_dict)
+
+# Add an item
+my_dict['c'] = 3
+print("After adding item:", my_dict)
+
+# Remove an item
+del my_dict['b']
+print("After removing item:", my_dict)
+                </pre>
+            `;
+            exampleDiv.classList.remove('hidden');
+            exampleDiv.classList.add('visible');
+        }
+    </script>
+</div>
